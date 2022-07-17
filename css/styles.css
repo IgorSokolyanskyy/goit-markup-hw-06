@@ -130,7 +130,7 @@ a {
   color: var(--accent-color);
 }
 
-/* подчеркивание */
+/* нижнее подчеркивание */
 .link.current::after {
   content: '';
 
