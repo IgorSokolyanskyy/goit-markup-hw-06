@@ -499,14 +499,79 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <h3 class="section-title subscribe">Подпишитесь на рассылку</h3>
+          <form class="form-footer">
+            <input type="email" name="mail" placeholder="E-mail" />
+
+            <button type="submit" class="button submit">
+              <div class="submit-activ">
+                <span class="span-subscribe">Подписаться</span
+                ><svg width="24" height="24">
+                  <use href="./images/icons.svg/sprite-svg.svg#icon-icon-send"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- бекдроп -->
     <div class="backdrop is-hidden" data-modal>
+      <!-- модальное окно -->
       <div class="modal">
-        <button type="button" class="icon-close" data-modal-close>
-          <svg width="18" height="18">
+        <form class="form-modal" autocomplete="off">
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+          <label class="label-group">
+            Имя
+            <input class="input" type="text" name="name" />
+            <svg class="form-activ-icon" width="18" height="18">
+              <use href="./images/icons.svg/sprite-svg.svg#icon-person"></use>
+            </svg>
+          </label>
+
+          <label class="label-group">
+            Телефон
+            <input class="input" type="tel" name="tel" />
+            <svg class="form-activ-icon" width="18" height="18">
+              <use href="./images/icons.svg/sprite-svg.svg#icon-phone"></use>
+            </svg>
+          </label>
+
+          <label class="label-group">
+            Почт
+            <input class="input" name="email" id="email" />
+            <svg class="form-activ-icon" width="18" height="18">
+              <use href="./images/icons.svg/sprite-svg.svg#icon-email-b"></use>
+            </svg>
+          </label>
+
+          <label class="label-group comment">
+            Комментарий
+            <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+          </label>
+
+          <div class="options">
+            <input
+              type="checkbox"
+              name=""
+              value="Соглашаюсь с рассылкой и принимаю Условия договора"
+              id="contract"
+            /><label for="contract">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          </div>
+
+          <!-- 
+            <label for="pdf">Загрузить копию</label>
+            <input type="file" name="pdf" id="pdf"> -->
+
+          <button class="button form-button" type="submit">Отправить</button>
+        </form>
+
+        <!-- кнопка закрытия -->
+        <button type="button" class="button-close" data-modal-close>
+          <svg class="close-icon" width="18" height="18">
             <use href="./images/icons.svg/sprite-svg.svg#icon-close-black"></use>
           </svg>
         </button>
