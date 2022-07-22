@@ -1072,7 +1072,7 @@ textarea::placeholder {
   position: absolute;
   content: '';
 
-  right: 12.5px;
+  right: 12px;
   bottom: 5px;
 
   width: 28.5%;
