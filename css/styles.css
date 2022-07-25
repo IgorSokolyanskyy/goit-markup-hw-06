@@ -1052,25 +1052,27 @@ textarea::placeholder {
 
   position: absolute;
 }
+
 .checkbox:checked + .icon-send {
-  fill: var(--accent-color);
+  background-color: var(--accent-color);
   border: none;
 }
-
 .checkbox:focus + .icon-send {
-  fill: var(--accent-color);
-  border: none;
+  border-color: var(--accent-color);
 }
 
 .icon-send {
   margin-right: 8px;
 
-  fill: var(--primary-white-color);
   border: 2px solid var(--primary-text-colot);
   border-radius: 2px;
   /* background-origin: border-box; */
 
-  transition: fill var(--transition-time) var(--timing-functions);
+  transition: background-color var(--transition-time) var(--timing-functions),
+    border var(--transition-time) var(--timing-functions),
+    border-color var(--transition-time) var(--timing-functions);
+
+  cursor: pointer;
 }
 
 .agreement {
