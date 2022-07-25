@@ -1060,6 +1060,9 @@ textarea::placeholder {
 .checkbox:focus + .icon-send {
   border-color: var(--accent-color);
 }
+.checkbox:hover + .icon-send {
+  border-color: var(--accent-color);
+}
 
 .icon-send {
   margin-right: 8px;
